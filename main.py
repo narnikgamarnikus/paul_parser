@@ -25,7 +25,7 @@ def open_web_site():
 	sidebar = soup.find('div', {'id': 'sidebar'})
 	items = sidebar.findAll('div', {'class': 'recently_aricle'})
 
-	today = d.today().strftime("%Y %m %d")
+	today = d.today().strftime("%Y-%m-%d")
 	
 	with open('sexshop-{}.csv'.format(today), 'w', newline='') as csvfile:
 
