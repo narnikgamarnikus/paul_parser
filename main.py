@@ -5,9 +5,12 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import csv
 from datetime import date as d
+import os
+
+
 url = "http://pelotkashop.ru"
 
-browser = webdriver.PhantomJS()
+browser = webdriver.PhantomJS(service_log_path=os.path.devnull)
 
 
 def open_web_site():
