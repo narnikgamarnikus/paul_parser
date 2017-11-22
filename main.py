@@ -11,7 +11,7 @@ import os
 url = "http://pelotkashop.ru"
 
 browser = webdriver.PhantomJS(
-	executable_path='/phantomjs-1.9.8-linux-x86_64/bin/phantomjs',
+	executable_path='phantomjs-1.9.8-linux-x86_64/bin/phantomjs',
 	service_log_path=os.path.devnull
 	)
 
